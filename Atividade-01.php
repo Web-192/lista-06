@@ -1,41 +1,13 @@
 <?php
-// Pedidos realizados 
-
+//Entradas - Pedidos realizados 
 $continuar = 0;
-$qtdPedidos = 0;
+$qtdPedidos = 3;
+$produto1 = "Cereal";
+$valorProduto1 = 35.00;
+$produto2 = "Leite";
+$valorProduto2 = 12.00;
+$produto3 = "Biscoitos";
+$valorProduto3 = 47.00;
 
-do {
-
-    $qtdPedidos++;
-    echo ("Pedido número: $qtdPedidos <br>"); //interpolação
-
-    //flag: 0-se não deseja comprar novamente
-    //flag: 1-se deseja continuar comprando
-    $continuar = rand(0, 1);
-
-    echo ("Continuar: $continuar <br>");
-
-    if ($continuar == true) {
-        echo ("O cliente decidiu fazer outro pedido. <br>");
-    } else {
-        echo ("O cliente decidiu encerrar as compras. <br>");
-    }
-
-    echo ("<hr>");
-} while ($continuar == true);
-
-//Quantas vendas foram realizadas? 
-echo ("<strong> Foram realizadas: $qtdPedidos </strong>");
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
-</head>
-<body>
-    <h2>Atividade 1</h2>
-</body>
-</html>
+//Processamento
+($valorProduto1 + $valorProduto2 + $valorProduto3);

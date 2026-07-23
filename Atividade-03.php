@@ -20,6 +20,11 @@ do {
     echo ("Valor do Depósito: " . $valorDeposito ."<br>");
 
     $depositos++;
+    $dinheiroDepositado += $depositos;
+
+    $continuar = rand(0,1);
+    echo ("Continuar? [ $continuar ]
+    0-)
 
 }
 ?>

@@ -1,14 +1,25 @@
 <?php
-?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
-</head>
-<body>
-    <h2>Atividade 3</h2>
-</body>
-</html>
+/*
+Atividade 03 – Depósitos
+Uma pessoa faz depósitos. E, ele faz pelo menos 1 depósito.
+Valor: rand(50,200).
+Continue enquanto rand(0,1) retornar 1.
+Conte os depósitos.
+Some o dinheiro depositado.
+Exiba o total.
+*/
+
+//Inicializar
+$depositos = 0;
+$dinheiroDepositado = 0;
+$Total = 0;
+
+do {
+    $valorDeposito =  rand(50,200);
+    echo ("Valor do Depósito: " . $valorDeposito ."<br>");
+
+    $depositos++;
+
+}
+?>

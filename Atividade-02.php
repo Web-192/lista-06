@@ -17,19 +17,20 @@ $totalMedia = 0;
 
 do {
     $pontuacao = rand(0,100);
-    echo ("Pontuação Total: " . $pontuacao . "<br>");
+    echo ("Pontuação Da Partida: " . $pontuacao . "<br>");
 
     $partidas++;
     $pontuacaoFinal += $pontuacao;
 
     $continuar = rand(0,1);
     echo ("Continuar? [ $continuar ] 0-Jogo Terminado e 1-Joga Novamente <br>");
+    echo("<hr>");
 
 } while ($continuar == 1);
 
 echo("Total de Partidas: " . $partidas . "<br>");
 
-echo("Pontuação Total: " . $pontuacaoFinal . "<br>");
+echo("Pontuação Final: " . $pontuacaoFinal . "<br>");
 
 echo("Média: " . ($pontuacaoFinal/$partidas) . "<br>");
 ?>

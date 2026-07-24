@@ -11,20 +11,24 @@ Exiba o total.
 */
 
 //Inicializar
-$depositos = 0;
-$dinheiroDepositado = 0;
-$Total = 0;
+$quantidadeDepositos = 0;
+$valoresDepositados = 0;
+$totalDepositado = 0;
 
 do {
     $valorDeposito =  rand(50,200);
     echo ("Valor do Depósito: " . $valorDeposito ."<br>");
 
-    $depositos++;
-    $dinheiroDepositado += $depositos;
+    $quantidadeDepositos++;
+    $totalDepositado += $valorDeposito;
 
     $continuar = rand(0,1);
     echo ("Continuar? [ $continuar ]
-    0-)
+    0-Saiu e 1-Novo Déposito <br>");
+    echo ("<hr>");
 
-}
+} while ($continuar == 1);
+
+echo("Quantidade de Depósitos: " . $quantidadeDepositos . "<br>");
+echo("Total Depositado: " . $totalDepositado . "<br>");
 ?>

@@ -33,8 +33,8 @@ do {
   
 } while ($continuar == 1);
 
-echo("Quantidade de pedidos" . $qtdPedidos . "<br>");
-echo("Soma total da compra" . $somaTotalCompra . "<br>");
+echo("Quantidade de pedidos " . $qtdPedidos . "<br>");
+echo("Soma total da compra " . $somaTotalCompra . "<br>");
 
 
 
